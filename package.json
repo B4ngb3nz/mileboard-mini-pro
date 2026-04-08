@@ -13,19 +13,18 @@
   "build": {
     "appId": "com.mile.board.mini.pro",
     "productName": "Mile Board Mini PRO",
-    "directories": { "output": "dist" },
-    "win": { "target": "nsis", "icon": "icon.ico" },
-    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true },
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": true
+    },
     "publish": null
-  },
-  "win": {
-    "target": "nsis",
-    "icon": "icon.ico"
-  },
-  "nsis": {
-    "oneClick": false,
-    "allowToChangeInstallationDirectory": true,
-    "runAfterFinish": true
-  }
   }
 }
