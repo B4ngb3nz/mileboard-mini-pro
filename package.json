@@ -3,19 +3,17 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder"
+  "build": "electron-builder"
   },
   "devDependencies": {
     "electron": "^30.0.0",
     "electron-builder": "^24.0.0"
   },
   "build": {
-    "appId": "com.mile.board.mini.pro",
-    "productName": "Mile Board Mini PRO",
-    "win": {
-      "target": "nsis",
-      "icon": "icon.ico"
+  "appId": "com.mile.board.mini.pro",
+  "productName": "Mile Board Mini PRO",
+  "win": { "target": "nsis", "icon": "icon.ico" },
+  "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true }
     },
     "nsis": {
       "oneClick": false,
