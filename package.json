@@ -11,10 +11,12 @@
     "electron-builder": "^24.0.0"
   },
   "build": {
-  "appId": "com.mile.board.mini.pro",
-  "productName": "Mile Board Mini PRO",
-  "directories": {
-    "output": "dist"
+    "appId": "com.mile.board.mini.pro",
+    "productName": "Mile Board Mini PRO",
+    "directories": { "output": "dist" },
+    "win": { "target": "nsis", "icon": "icon.ico" },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true },
+    "publish": null
   },
   "win": {
     "target": "nsis",
